@@ -1,12 +1,21 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 //import Image from 'next/image';
 // import Logo from '@/assets/images/jobhub-logo.svg';
 import { BarIcon } from '@/assets/icons/icons';
 import OfcanvasMenu from '@/components/OfcanvasMenu';
+
 import Link from 'next/link';
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handelToggleMenu = () => {
+    setToggle((state) => !state);
+  };
+
   return (
-    <div className="py-5 container relative">
+    <div className="py-5 container ">
       <div className="flex items-center justify-between">
         <div className="Job-brand-item">
           <Link href="/">
@@ -89,8 +98,11 @@ const Navbar = () => {
           >
             Join Us
           </Link>
-          <BarIcon></BarIcon>
+          <div onClick={handelToggleMenu}>
+            <BarIcon></BarIcon>
+          </div>
         </div>
+        <OfcanvasMenu handelToggle={handelToggleMenu} toggleValue={toggle} />
       </div>
     </div>
   );
