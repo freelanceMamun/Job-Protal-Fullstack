@@ -7,12 +7,15 @@ const SearchFilter = () => {
   return (
     <div className="mt-5">
       <div className="">
-        <form action="" className="flex gap-4">
+        <form
+          action=""
+          className="flex gap-4 bg-white px-2 py-5 rounded   border-[#90a5e147] shadow-[0px_10px_30px_#90a5e147] "
+        >
           <div className="flex">
             <select
               name=""
               id=""
-              className=" px-4 focus:outline-none cursor-pointer"
+              className=" px-4 focus:outline-none cursor-pointer bg-transparent"
             >
               <option value="" selected>
                 Industry
@@ -28,7 +31,7 @@ const SearchFilter = () => {
             <select
               name=""
               id=""
-              className=" px-4 focus:outline-none cursor-pointer"
+              className=" px-4 focus:outline-none cursor-pointer bg-transparent"
             >
               <option value="0" selected>
                 Location
@@ -43,8 +46,11 @@ const SearchFilter = () => {
             <input
               type="text"
               placeholder="Your keyword..."
-              className=" focus:outline-none border-none"
+              className=" focus:outline-none border-none bg-transparent"
             />
+          </div>
+          <div>
+            <button className="bg-l">Search</button>
           </div>
         </form>
       </div>
