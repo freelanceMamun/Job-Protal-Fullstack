@@ -1,4 +1,7 @@
 'use client';
+
+import indurstry from '../../../public/industry.svg';
+
 export const BarIcon = () => {
   return (
     <svg

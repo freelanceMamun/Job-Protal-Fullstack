@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-//import Image from 'next/image';
-// import Logo from '@/assets/images/jobhub-logo.svg';
+import Image from 'next/image';
+import Logo from '@/assets/images/jobhub-logo.svg';
 import { BarIcon } from '@/assets/icons/icons';
 import OfcanvasMenu from '@/components/OfcanvasMenu';
 
@@ -19,15 +19,16 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="Job-brand-item">
           <Link href="/">
-            <span className="text-2xl md:text-2xl xl:text-3xl">JobBox</span>
+            {/* <span className="text-2xl md:text-2xl xl:text-3xl">JobBox</span> */}
+            <Image src={Logo} alt="Job-box"></Image>
           </Link>
         </div>
         <div className="nav-item hidden lg:block">
-          <ul className="flex items-center lg:gap-6 xl:gap-8 ">
+          <ul className="flex  items-center lg:gap-6 xl:gap-8 ">
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 Home
               </Link>
@@ -35,7 +36,7 @@ const Navbar = () => {
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 Find Job
               </Link>
@@ -43,7 +44,7 @@ const Navbar = () => {
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 Recruiters
               </Link>
@@ -51,7 +52,7 @@ const Navbar = () => {
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 About
               </Link>
@@ -59,7 +60,7 @@ const Navbar = () => {
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 Blog
               </Link>
@@ -67,7 +68,7 @@ const Navbar = () => {
             <li>
               <Link
                 href=""
-                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition"
+                className="text-[#f6f6f6]/70 dark:hover:text-white duration-200 transition text-black hover:text-[#1d4ed8] font-medium"
               >
                 Contact
               </Link>
@@ -78,13 +79,13 @@ const Navbar = () => {
           <div className="flex items-center gap-3 xl:gap-5">
             <Link
               href=""
-              className="xl:px-7 rounded-md md:py-2 md:px-4 xl:py-3 text-[#f6f6f6]/90 dark:hover:text-white duration-200 transition"
+              className="xl:px-7 rounded-md md:py-2 md:px-4 font-medium text-[#1d4ed8] xl:py-3 text-[#f6f6f6]/90 dark:hover:text-white duration-200 transition"
             >
               Login
             </Link>
             <Link
               href=""
-              className="xl:px-8 bg-[#021329]   md:py-2 md:px-4 rounded-md xl:py-3 text-[#f6f6f6]/90 dark:hover:text-white duration-200 transition"
+              className="xl:px-8 bg-[#021329] hover:-translate-y-1 md:py-2 md:px-4 rounded-md xl:py-3 text-[#f6f6f6]/90 dark:hover:text-white duration-200 transition"
             >
               Register
             </Link>
