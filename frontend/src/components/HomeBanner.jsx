@@ -3,11 +3,10 @@ import React from 'react';
 import banner1 from '@/assets/images/banner1.png';
 import SearchFilter from './SearchFilterHome';
 import Img1 from '@/assets/images/banner2.png';
-
 import svgShape from '@/assets/images/icon-bottom-banner.png';
 const HBanner = () => {
   return (
-    <div className="container h-screen">
+    <div className="container h-[80vh] ">
       <div className="grid grid-cols-2 gap-2 pt-32">
         <div>
           <div className="pr-30">
@@ -69,7 +68,7 @@ const HBanner = () => {
             src={svgShape}
             width={'100%'}
             height={'100%'}
-            className=" absolute z-[2] -bottom-20"
+            className=" absolute z-[2] -bottom-20 left-10"
           ></Image>
         </div>
       </div>
