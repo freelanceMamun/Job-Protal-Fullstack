@@ -13,3 +13,9 @@ body {
   -webkit-backdrop-filter: blur(4.5px);
   border: 0px solid rgba(255, 255, 255, 0.33);
 }
+
+.textgradient {
+  background: -webkit-linear-gradient(#021329, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

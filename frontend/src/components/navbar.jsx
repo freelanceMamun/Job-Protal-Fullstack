@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3 xl:gap-5">
             <Link
               href=""
-              className="xl:px-7 rounded-md md:py-2 md:px-4 font-medium text-[#1d4ed8] xl:py-3 text-[#f6f6f6]/90 dark:hover:text-white duration-200 transition"
+              className="xl:px-7 rounded-md md:py-2 md:px-4 font-medium hover:text-[#1d4ed8] xl:py-3  dark:hover:text-white duration-300 transition"
             >
               Login
             </Link>
