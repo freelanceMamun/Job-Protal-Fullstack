@@ -37,7 +37,7 @@ export default function Home() {
 
       <div className="banner">
         <div className="container">
-          <div className="max-w-6xl flex items-center py-8 px-10 justify-between m-auto border border-[#e0e6f7]">
+          <div className="max-w-6xl flex items-center py-5 rounded px-10 justify-between m-auto border border-[#e0e6f7]">
             <div className="">
               <Image src={BanerSvg} width={100} height={100} />
             </div>
@@ -49,14 +49,7 @@ export default function Home() {
                 Hiring
               </h2>
             </div>
-            <div className="content">
-              <h5 className=" uppercase text-lg text-[#a0abb8] font-semibold">
-                We are
-              </h5>
-              <h2 className="text-[#05264e] text-5xl uppercase font-semibold">
-                Hiring
-              </h2>
-            </div>
+
             <div className="content">
               <p>
                 Let’s <span className="text-[#05264e] font-medium ">Work</span>{' '}
@@ -64,6 +57,17 @@ export default function Home() {
                 <span className="text-[#05264e] font-medium ">Explore</span>{' '}
                 Opportunities
               </p>
+            </div>
+
+            <div className="content">
+              <a
+                href=""
+                className="bg-[#021329] flex gap-2 hover:-translate-y-1 duration-300 transition items-center  
+                 text-white rounded py-3 px-6"
+              >
+                <span></span>
+                <span>Apply Now</span>
+              </a>
             </div>
             <div className="">
               <Image src={BanerSvg2} width={100} height={100} />
