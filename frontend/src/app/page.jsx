@@ -1,8 +1,10 @@
 import HBanner from '@/components/HomeBanner';
 import Image from 'next/image';
-// import banner1 from '@/assets/images/banner1.png';
+
 import banenrImg from '@/assets/images/bg-banner.59ddabf7.svg';
 import Catagorycard from '@/components/catagorycard';
+import BanerSvg from '@/assets/images/bg-left-hiring.cc0e2e85.svg';
+import BanerSvg2 from '@/assets/images/bg-right-hiring.0dfda9a2.svg';
 export default function Home() {
   return (
     <main className="">
@@ -28,6 +30,45 @@ export default function Home() {
           <Catagorycard></Catagorycard>
           <Catagorycard></Catagorycard>
           <Catagorycard></Catagorycard>
+        </div>
+      </div>
+
+      {/* ==== Banner  */}
+
+      <div className="banner">
+        <div className="container">
+          <div className="max-w-6xl flex items-center py-8 px-10 justify-between m-auto border border-[#e0e6f7]">
+            <div className="">
+              <Image src={BanerSvg} width={100} height={100} />
+            </div>
+            <div className="content">
+              <h5 className=" uppercase text-lg text-[#a0abb8] font-semibold">
+                We are
+              </h5>
+              <h2 className="text-[#05264e] text-5xl uppercase font-semibold">
+                Hiring
+              </h2>
+            </div>
+            <div className="content">
+              <h5 className=" uppercase text-lg text-[#a0abb8] font-semibold">
+                We are
+              </h5>
+              <h2 className="text-[#05264e] text-5xl uppercase font-semibold">
+                Hiring
+              </h2>
+            </div>
+            <div className="content">
+              <p>
+                Let’s <span className="text-[#05264e] font-medium ">Work</span>{' '}
+                Together <br /> &
+                <span className="text-[#05264e] font-medium ">Explore</span>{' '}
+                Opportunities
+              </p>
+            </div>
+            <div className="">
+              <Image src={BanerSvg2} width={100} height={100} />
+            </div>
+          </div>
         </div>
       </div>
     </main>
