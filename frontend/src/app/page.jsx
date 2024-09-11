@@ -5,7 +5,11 @@ import banenrImg from '@/assets/images/bg-banner.59ddabf7.svg';
 import Catagorycard from '@/components/catagorycard';
 import BanerSvg from '@/assets/images/bg-left-hiring.cc0e2e85.svg';
 import BanerSvg2 from '@/assets/images/bg-right-hiring.0dfda9a2.svg';
-export default function Home() {
+
+import JobCard from '@/components/JobCard';
+import Link from 'next/link';
+
+export default function Main() {
   return (
     <main className="">
       <Image
@@ -34,7 +38,6 @@ export default function Home() {
       </div>
 
       {/* ==== Banner  */}
-
       <div className="banner">
         <div className="container">
           <div className="max-w-6xl flex items-center py-5 rounded px-10 justify-between m-auto border border-[#e0e6f7]">
@@ -71,6 +74,43 @@ export default function Home() {
             </div>
             <div className="">
               <Image src={BanerSvg2} width={100} height={100} />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ==== Banner  */}
+
+      {/* ----- Job section ------- */}
+      <div className="container">
+        <div className="my-20">
+          <div className="filter-element">
+            <div className="grid grid-cols-8 gap-4">
+              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                <Link href={''} className="w-full py-3 block text-[15px]">
+                  Content Writer
+                </Link>
+              </div>
+              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                <Link href={''} className="w-full py-3 block text-[15px]">
+                  Content Writer
+                </Link>
+              </div>
+              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                <Link href={''} className="w-full py-3 block text-[15px]">
+                  Content Writer
+                </Link>
+              </div>
+              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                <Link href={''} className="w-full py-3 block text-[15px]">
+                  Content Writer
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="job-card-element my-10 ">
+            <div className="grid grid-cols-4">
+              <JobCard></JobCard>
             </div>
           </div>
         </div>
