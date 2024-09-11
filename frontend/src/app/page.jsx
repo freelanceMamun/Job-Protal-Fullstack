@@ -82,35 +82,68 @@ export default function Main() {
 
       {/* ----- Job section ------- */}
       <div className="container">
-        <div className="my-20">
-          <div className="filter-element">
-            <div className="grid grid-cols-8 gap-4">
-              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
-                <Link href={''} className="w-full py-3 block text-[15px]">
-                  Content Writer
-                </Link>
-              </div>
-              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
-                <Link href={''} className="w-full py-3 block text-[15px]">
-                  Content Writer
-                </Link>
-              </div>
-              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
-                <Link href={''} className="w-full py-3 block text-[15px]">
-                  Content Writer
-                </Link>
-              </div>
-              <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
-                <Link href={''} className="w-full py-3 block text-[15px]">
-                  Content Writer
-                </Link>
+        <div className="my-28">
+          <div className=" text-center">
+            <h2 className=" text-4xl text-[#05264e] my-4 font-medium">
+              Jobs of the day
+            </h2>
+            <p className="text-[#66789c]  text-lg">
+              Search and connect with the right candidates faster
+            </p>
+          </div>
+          <div className="my-20">
+            <div className="filter-element">
+              <div className="grid grid-cols-8 gap-4">
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
+                <div className="border text-center duration-300 transition-all hover:-translate-y-1 border-[#021329] rounded-md hover:bg-[#021329] hover:text-white">
+                  <Link href={''} className="w-full py-3 block text-[15px]">
+                    Content Writer
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="job-card-element my-10 ">
-            <div className="grid grid-cols-4">
-              <JobCard></JobCard>
+            <div className="job-card-element my-10 ">
+              <div className="grid grid-cols-4 gap-5">
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+              </div>
             </div>
           </div>
         </div>
