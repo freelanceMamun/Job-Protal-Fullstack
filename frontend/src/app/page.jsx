@@ -143,6 +143,12 @@ export default function Main() {
                 <JobCard></JobCard>
                 <JobCard></JobCard>
                 <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
+                <JobCard></JobCard>
               </div>
             </div>
           </div>

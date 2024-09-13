@@ -3,7 +3,7 @@ import React from 'react';
 const JobCard = () => {
   return (
     <div className=" bg-[#F2F6FD] border rounded-md hover:shadow-[0_10px_20px_-5px_rgba(10,42,105,.06)] p-4 hover:bg-transparent duration-300 transition  hover:border-[#b4c0e0]">
-      <div className="px-2 pt-10 pb-5">
+      <div className="px-2 pt-5 pb-5">
         <h4 className="font-semibold text-xl">UiUX Designer</h4>
         <div className="flex gap-2 mt-1">
           <div className="time">
@@ -49,7 +49,7 @@ const JobCard = () => {
             </a>
           </div>
         </div>
-        <div className="apply-button text-end mt-16">
+        <div className="apply-button text-end mt-12">
           <a
             href="#"
             className="border py-2 px-5 text-[15px] bg-[#021329] text-white rounded hover:bg-transparent hover:text-black duration-300 transition hover:border-[#a0abb8]"
